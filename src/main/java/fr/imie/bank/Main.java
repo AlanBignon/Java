@@ -1,7 +1,10 @@
+package main.java.fr.imie.bank;
+
+import main.java.fr.imie.bank.model.*;
+
 import java.time.LocalDate;
 import java.util.*;
 import java.time.format.DateTimeFormatter;
-import java.io.*;
 
 public class Main {
 

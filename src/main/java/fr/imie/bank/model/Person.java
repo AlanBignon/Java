@@ -1,3 +1,4 @@
+package main.java.fr.imie.bank.model;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;

@@ -1,3 +1,6 @@
+package main.java.fr.imie.bank.model;
+
+
 import java.io.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;

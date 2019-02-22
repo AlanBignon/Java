@@ -1,3 +1,5 @@
+package main.java.fr.imie.bank.model;
+
 import java.math.BigDecimal;
 
 public class BankAccount {
