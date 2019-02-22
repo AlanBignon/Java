@@ -59,14 +59,17 @@ public class PersonCSV implements PersonDAO {
             while ((line = reader.readLine()) != null){
                 if(index == id){
                     String[] decompose = line.split(";");
-                    String firstname = decompose[0];
-                    String lastname = decompose[1];
-                    String email = decompose[2];
-                    String birthdate = decompose[3];
+                    String a = decompose[0];
+                    String firstname = decompose[1];
+                    String lastname = decompose[2];
+                    String email = decompose[3];
+                    String birthdate = decompose[4];
 
                     LocalDate dB = LocalDate.parse(birthdate);
 
-                    Person person = new Person(firstname, lastname, email, dB);
+                    Integer aze = new Integer(a);
+
+                    Person person = new Person(firstname, lastname, email, dB, aze);
                     reader.close();
                     return person;
                 }
