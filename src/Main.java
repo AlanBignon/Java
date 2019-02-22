@@ -94,11 +94,11 @@ public class Main {
                     id = sc.nextInt();
                 }
 
-                BankAccount compte = new BankAccount(ListePerson.get(id));
+                BankAccount compte = new BankAccount(person.findById(id));
 
                 bankAccounts.add(compte);
 
-                ListePerson.get(id).addBankAccounts(compte);
+                person.findById(id).addBankAccounts(compte);
 
                 person.saveAll(ListePerson);
 
